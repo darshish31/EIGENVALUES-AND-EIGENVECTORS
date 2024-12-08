@@ -12,22 +12,19 @@ To write a python program to find the Eigenvalues and Eigen Vectors
 
 ## Program:
 ```
-#Program to find the inverse of a matrix.
-#Developed by:Darshini B
+#Program to find the eigen values and eigen vectors.
+#Developed by:Darshini B 
 #RegisterNumber:24008783
 
 import numpy as np
-matrix = np.array([[1, 0, 3], [-1,2,-2], [2,3,-1]])
-try:
-    inverse = np.linalg.inv(matrix)
-    print(inverse)
-except np.linalg.LinAlgError:
-    print()
+matrix = np.array([[-2, 2, -3], [2, 1, -6], [-1, -2, 0]])
+eigenvalues, eigenvectors = np.linalg.eig(matrix)
+print(f"Eigen values are {eigenvalues} and Eigen Vectors are {eigenvectors}")
 
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/d700368d-8a84-4f83-a5d7-c15f745051b3)
+![image](https://github.com/user-attachments/assets/df227fcd-a264-44fc-96b3-7b2c3ebe1ff8)
 
 ## Result:
 Thus the Eigenvalue and Eigenvector is successfully solved using python program
